@@ -1,4 +1,4 @@
--- Запит 1 - Вивести жанри та кількість серіалів, що до них належать.
+-- Query 1 - Genres and Quantity.
 
 SELECT
     genre_kind,
@@ -8,7 +8,7 @@ FROM
 GROUP BY
     genre_kind;
     
--- Запит 2 - Вивести кількість серілів, що є характерною для кожного рівня популярності. Низьку популярність мають серіали з рейтингом 0-4, cередню - 4-7, високу 7-10
+-- Query 2 - Items and Popularity(0-4 - low popularity, 4-7 - medium popularity, 7-10 - high popularity)
 
  SELECT
     items,
@@ -62,7 +62,7 @@ FROM
     );
 
     
--- Запит 3 - Вивести жанри та максимальні рейтинги, які вони отримували.
+-- Query 3 - Genres and Ratings
 
 SELECT
     genre_kind,
