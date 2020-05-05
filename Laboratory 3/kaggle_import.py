@@ -10,10 +10,8 @@ connection = cx_Oracle.connect(username, password, databaseName)
 cursor = connection.cursor()
 
 cursor.execute("DELETE FROM serialsgenres")
-cursor.execute("DELETE FROM serialsratings")
 cursor.execute("DELETE FROM serials")
 cursor.execute("DELETE FROM genres")
-cursor.execute("DELETE FROM ratings")
 
 connection.commit()
 
